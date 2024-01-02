@@ -181,7 +181,7 @@ function upgrade(upAmo, price, type, boost) {
         document.getElementById("upDis"+upAmo).innerHTML = "Bought!"
         document.getElementById("ClickDisplay").innerHTML = Format(clicks)
         console.log("BOUGHT")
-        document.getElementById("Upgrade"+upAmo+1).style.visibility = "visible"
+        document.getElementById("Upgrade"+(upAmo+1)).style.visibility = "visible"
 
         if (type == 1) {
             clickGain = clickGain.times(boost)
@@ -192,7 +192,7 @@ function upgrade(upAmo, price, type, boost) {
             document.getElementById("upDis"+upAmo).innerHTML = "Bought!"
             document.getElementById("ClickDisplay").innerHTML = Format(clicks)
             console.log("BOUGHT")
-            document.getElementById("Upgrade"+upAmo+1).style.visibility = "visible"
+            document.getElementById("Upgrade"+(upAmo+1)).style.visibility = "visible"
             decUp["up"+upAmo] = true
         }
     }
