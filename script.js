@@ -32,7 +32,7 @@ function InitUps() {
 
 window.onload = function() {
     InitUps()
-    //loadData()
+    loadData()
     Loop()
 }
 
