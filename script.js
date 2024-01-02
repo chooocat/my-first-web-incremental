@@ -25,15 +25,14 @@ function saveData() {
 }
 
 function InitUps() {
-    for (i = 1; i <= upgradeAmt; i++) {
-        if (i != 1) {
-            document.getElementById("Upgrade"+i).style.visibility = "hidden"
-        } else {continue}
+    for (i = 2; i <= upgradeAmt; i++) {
+        document.getElementById("Upgrade"+i).style.visibility = "collapse"
     }
 }
 
 window.onload = function() {
-    loadData()
+    InitUps()
+    //loadData()
     Loop()
 }
 
@@ -181,7 +180,9 @@ function upgrade(upAmo, price, type, boost) {
         document.getElementById("upDis"+upAmo).innerHTML = "Bought!"
         document.getElementById("ClickDisplay").innerHTML = Format(clicks)
         console.log("BOUGHT")
-        document.getElementById("Upgrade"+(upAmo+1)).style.visibility = "visible"
+        if (upAmo != upgradeAmt) {
+            document.getElementById("Upgrade"+(upAmo+1)).style.visibility = "visible"
+        }
 
         if (type == 1) {
             clickGain = clickGain.times(boost)
@@ -192,7 +193,9 @@ function upgrade(upAmo, price, type, boost) {
             document.getElementById("upDis"+upAmo).innerHTML = "Bought!"
             document.getElementById("ClickDisplay").innerHTML = Format(clicks)
             console.log("BOUGHT")
-            document.getElementById("Upgrade"+(upAmo+1)).style.visibility = "visible"
+            if (upAmo != upgradeAmt) {
+                document.getElementById("Upgrade"+(upAmo+1)).style.visibility = "visible"
+            }
             decUp["up"+upAmo] = true
         }
     }
