@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clicking Incremental</title>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <p>You have <b><span id="ClickDisplay">0</span> Points</b></p>
+    <p>Endgame: <b>1e35 Points</b></p>
+    <br>
+    <button onclick="upgrade(1, 50, 1, 2)" class="clickButton" id="Upgrade1"><span id="upDis1">2x Points - 50 Points</span></button>
+    <br>
+    <br>
+    <button onclick="upgrade(2, 250, 1, 3)" class="clickButton" id="Upgrade2"><span id="upDis2">3x Points - 250 Points</span></button>
+    <br>
+    <br>
+    <button onclick="upgrade(3, 1e3, 1, 2.5)" class="clickButton" id="Upgrade3"><span id="upDis3">2.5x Points - 1000 Points</span></button>
+    <br>
+    <br>
+    <button onclick="upgrade(4, 4e3, 1, 1.5)" class="clickButton" id="Upgrade4"><span id="upDis4">1.5x Points - 4000 Points</span></button>
+    <br>
+    <br>
+    <button onclick="upgrade(5, 1e4, 1, 4)" class="clickButton" id="Upgrade5"><span id="upDis5">4x Points - 10000 Points</span></button>
+    <br>
+    <br>
+    <button onclick="upgrade(6, 5e4, 1, 2.2)" class="clickButton" id="Upgrade6"><span id="upDis6">2.2x Points - 50000 Points</span></button>
+    <br>
+    <br>
+    <button onclick="upgrade(7, 1e5, 0, 1)" class="clickButton" id="Upgrade7"><span id="upDis7">Points boost itself - 100000 Points</span></button>
+    <br>
+    <br>
+    <button onclick="upgrade(8, 5e5, 1, 3.6)" class="clickButton" id="Upgrade8"><span id="upDis8">3.6x Points - 500000 Points</span></button>
+    <br>
+    <br>
+    <button onclick="upgrade(9, 1.5e6, 0, 1)" class="clickButton" id="Upgrade9"><span id="upDis9">+0.1 Points boost itself base - 1.5M Points</span></button>
+    <br>
+    <br>
+    <button onclick="upgrade(10, 1e7, 1, 5)" class="clickButton" id="Upgrade10"><span id="upDis10">5x Points - 10M Points</span></button>
+    <br>
+    <br>
+    <button onclick="upgrade(11, 7e7, 1, 3.14)" class="clickButton" id="Upgrade11"><span id="upDis11">3.14x Points - 70M Points</span></button>
+    <br>
+    <br>
+    <button onclick="upgrade(12, 1e9, 0, 1)" class="clickButton" id="Upgrade12"><span id="upDis12">+0.05 Points boost itself base - 1B Points</span></button>
+    <br>
+    <br>
+    <button onclick="upgrade(13, 2.5e9, 1, 5.2)" class="clickButton" id="Upgrade13"><span id="upDis13">5.2x Points - 2.5B Points</span></button>
+    <br>
+    <br>
+    <button onclick="upgrade(14, 1.5e10, 1, 5.5)" class="clickButton" id="Upgrade14"><span id="upDis14">5.5x Points - 15B Points</span></button>
+    <br>
+    <br>
+    <button onclick="upgrade(15, 7.5e10, 1, 4.6)" class="clickButton" id="Upgrade15"><span id="upDis15">4.6x Points - 75B Points</span></button>
+    <br>
+    <br>
+    <button onclick="upgrade(16, 5e11, 0, 1)" class="clickButton" id="Upgrade16"><span id="upDis16">+0.1 Points boost itself base - 500B Points</span></button>
+    <br>
+    <br>
+    <button onclick="upgrade(17, 6e13, 1, 6)" class="clickButton" id="Upgrade17"><span id="upDis17">6x Points - 60T Points</span></button>
+    <br>
+    <br>
+    <button onclick="upgrade(18, 1e15, 0, 1)" class="clickButton" id="Upgrade18"><span id="upDis18">+0.05 Points boost itself base - 1Qd Points</span></button>
+    <br>
+    <br>
+    <button onclick="upgrade(19, 2e16, 0, 1)" class="clickButton" id="Upgrade19"><span id="upDis19">Get more Points boost itself base based on total upgrades bought - 20Qd Points</span></button>
+    <br>
+    <br>
+    <button onclick="upgrade(20, 2e17, 1, 6.5)" class="clickButton" id="Upgrade20"><span id="upDis20">6.5x Points - 200Qd Points</span></button>
+    <br>
+    <br>
+    <button onclick="upgrade(21, 1.75e18, 1, 7.2)" class="clickButton" id="Upgrade21"><span id="upDis21">7.2x Points - 1.75Qn Points</span></button>
+    <br>
+    <br>
+    <button onclick="upgrade(22, 1.5e20, 0, 1)" class="clickButton" id="Upgrade22"><span id="upDis22">Points boost itself at small rate - 150Qn Points</span></button>
+    <br>
+    <br>
+    <button onclick="upgrade(23, 1e22, 1, 8)" class="clickButton" id="Upgrade23"><span id="upDis23">8x Points - 10Sx Points</span></button>
+    <br>
+    <br>
+    <button onclick="upgrade(24, 1e24, 1, 8.25)" class="clickButton" id="Upgrade24"><span id="upDis24">8.25x Points - 1Sp Points</span></button>
+    <br>
+    <br>
+    <button onclick="upgrade(25, 1e26, 0, 1)" class="clickButton" id="Upgrade25"><span id="upDis25">+0.05 2nd Points boost itself base upgrade - 100Sp Points</span></button>
+    <br>
+    <br>
+    <button onclick="upgrade(26, 4.5e28, 1, 9)" class="clickButton" id="Upgrade26"><span id="upDis26">9x Points - 45Oc Points</span></button>
+    <br>
+    <br>
+    <button onclick="upgrade(27, 5e30, 1, 10)" class="clickButton" id="Upgrade27"><span id="upDis27">10x Points - 5No Points</span></button>
+    <br>
+    <br>
+    <button onclick="upgrade(28, 2e33, 1, 11)" class="clickButton" id="Upgrade28"><span id="upDis28">11x Points - 2e33 Points</span></button>
+    <br>
+    <br>
+    <script src="break_eternity.js-master/break_eternity.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

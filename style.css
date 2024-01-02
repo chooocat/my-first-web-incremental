@@ -1,0 +1,24 @@
+html, body {
+    height: 100;
+    width: 100;
+    background-color: black;
+    text-align: center;
+    padding: 5px;
+}
+
+p {
+    text-align: center;
+    color: white;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: x-large;
+}
+
+.clickButton {
+    font-size: xx-large;
+    background-color: rgb(32, 32, 32);
+    color: white;
+    width: 35%;
+    height: 17.5%;
+    border-color: white;
+    border-radius: 10px;
+}
