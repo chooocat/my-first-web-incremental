@@ -22,3 +22,11 @@ p {
     border-color: white;
     border-radius: 10px;
 }
+
+.CA {
+    color: rgb(66, 132, 255);
+}
+
+.SCA {
+    color: rgb(140, 0, 255);
+}
