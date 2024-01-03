@@ -211,7 +211,7 @@ function GenerateClicks() {
     totalClicks = totalClicks.add(gain)
     clickDisplay = Format(clicks)
     sclickDisplay = Format(superClicks)
-    document.getElementById("clPSec").innerHTML = gain
+    document.getElementById("clPSec").innerHTML = Format(gain)
     document.getElementById("ClickDisplay").innerHTML = clickDisplay
     document.getElementById("ClickDisplay2").innerHTML = sclickDisplay
     document.getElementById("SCAB").innerHTML = Format(superClickBoost)+"x"
