@@ -7,8 +7,9 @@
     <link href="style.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
-    <p>You have <b><span id="ClickDisplay">0</span> Points</b></p>
-    <p>Endgame: <b>1e35 Points</b></p>
+    <p>You have <b class="CA"><span id="ClickDisplay">0</span> Points</b></p>
+    <p id="SupCl">You have <b class="SCA"><span id="ClickDisplay2">0</span> Super-Points</b> which translates to <b class="CA"><span id="SCAB">1x</span> Points</b></p>
+    <p>Endgame: <b class="CA">1e380 Points</b></p>
     <br>
     <button onclick="upgrade(1, 50, 1, 2)" class="clickButton" id="Upgrade1"><span id="upDis1">2x Points - 50 Points</span></button>
     <br>
@@ -94,6 +95,65 @@
     <button onclick="upgrade(28, 2e33, 1, 11)" class="clickButton" id="Upgrade28"><span id="upDis28">11x Points - 2e33 Points</span></button>
     <br>
     <br>
+    <button onclick="upgrade(29, 1.2e35, 1, 10.5)" class="clickButton" id="Upgrade29"><span id="upDis29">10.5x Points - 1.2e35 Points</span></button>
+    <br>
+    <br>
+    <button onclick="upgrade(30, 1e37, 1, 12.5)" class="clickButton" id="Upgrade30"><span id="upDis30">12.5x Points - 1e37 Points</span></button>
+    <br>
+    <br>
+    <button onclick="upgrade(31, 1e40, 1, 15)" class="clickButton" id="Upgrade31"><span id="upDis31">15x Points - 1e40 Points</span></button>
+    <br>
+    <br>
+    <button onclick="upgrade(32, 1e43, 0, 1)" class="clickButton" id="Upgrade32"><span id="upDis32">Unlock new type of Points - 1e43 Points</span></button>
+    <br>
+    <br>
+    <button onclick="upgrade(33, 1e50, 0, 1)" class="clickButton" id="Upgrade33"><span id="upDis33">+0.05 2nd Points boost itself base upgrade - 1e50 Points</span></button>
+    <br>
+    <br>
+    <button onclick="upgrade(34, 1e58, 1, 20)" class="clickButton" id="Upgrade34"><span id="upDis34">20x Points - 1e58 Points</span></button>
+    <br>
+    <br>
+    <button onclick="upgrade(35, 1e61, 0, 1)" class="clickButton" id="Upgrade35"><span id="upDis35">Improve S-Points boost formula - 1e61 Points</span></button>
+    <br>
+    <br>
+    <button onclick="upgrade(36, 1e66, 1, 25)" class="clickButton" id="Upgrade36"><span id="upDis36">25x Points - 1e66 Points</span></button>
+    <br>
+    <br>
+    <button onclick="upgrade(37, 1e71, 1, 40)" class="clickButton" id="Upgrade37"><span id="upDis37">40x Points - 1e71 Points</span></button>
+    <br>
+    <br>
+    <button onclick="upgrade(38, 7.77e77, 0, 1)" class="clickButton" id="Upgrade38"><span id="upDis38">Get more 2nd Points boost itself upgrade base based on total upgrades bought - 7.77e77 Points</span></button>
+    <br>
+    <br>
+    <button onclick="upgrade(39, 1e87, 1, 50)" class="clickButton" id="Upgrade39"><span id="upDis39">50x Points - 1e87 Points</span></button>
+    <br>
+    <br>
+    <button onclick="upgrade(40, 1e93, 0, 1)" class="clickButton" id="Upgrade40"><span id="upDis40">Improve S-Points boost formula even more - 1e93 Points</span></button>
+    <br>
+    <br>
+    <button onclick="upgrade(41, 1e101, 1, 100)" class="clickButton" id="Upgrade41"><span id="upDis41">100x Points - 1e101 Points</span></button>
+    <br>
+    <br>
+    <button onclick="upgrade(42, 1e112, 2, 0.1)" class="clickButton" id="Upgrade42"><span id="upDis42">^1.1 Points - 1e112 Points</span></button>
+    <br>
+    <br>
+    <button onclick="upgrade(43, 1e148, 2, 0.05 )" class="clickButton" id="Upgrade43"><span id="upDis43">^1.05 Points - 1e148 Points</span></button>
+    <br>
+    <br>
+    <button onclick="upgrade(44, 1e250, 0, 1)" class="clickButton" id="Upgrade44"><span id="upDis44">S-Points boost formula is overpowered - 1e250 Points</span></button>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <button onclick="resetData()" class="resetData" id="HRD">Reset Data</button>
     <script src="break_eternity.js"></script>
     <script src="script.js"></script>
 </body>
