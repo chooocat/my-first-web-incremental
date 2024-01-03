@@ -212,7 +212,7 @@ function GenerateClicks() {
     totalClicks = totalClicks.add(gain)
     clickDisplay = Format(clicks)
     sclickDisplay = Format(superClicks)
-    totalCPS = gain
+    totalCPS = gain.mul(10)
     document.getElementById("clPSec").innerHTML = Format(totalCPS)
     document.getElementById("ClickDisplay").innerHTML = clickDisplay
     document.getElementById("ClickDisplay2").innerHTML = sclickDisplay
