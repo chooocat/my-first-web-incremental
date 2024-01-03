@@ -7,6 +7,7 @@ clickPow = new Decimal (1)
 decimalClickBoost = new Decimal (1)
 superClicks = new Decimal (0)
 superClickBoost = new Decimal (1)
+totalCPS = new Decimal(1)
 decUp = {
     up7: false,
     up9: false,
@@ -211,7 +212,8 @@ function GenerateClicks() {
     totalClicks = totalClicks.add(gain)
     clickDisplay = Format(clicks)
     sclickDisplay = Format(superClicks)
-    document.getElementById("clPSec").innerHTML = Format(gain.toString())
+    totalCPS = gain
+    document.getElementById("clPSec").innerHTML = Format(totalCPS)
     document.getElementById("ClickDisplay").innerHTML = clickDisplay
     document.getElementById("ClickDisplay2").innerHTML = sclickDisplay
     document.getElementById("SCAB").innerHTML = Format(superClickBoost)+"x"
